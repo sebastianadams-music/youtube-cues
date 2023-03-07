@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper{
+  position: relative;
+}
+
+        #player3-container, #player2-container{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  animation-fill-mode: both; 
+}
+
+
+
+    </style>
+</head>
+<body>
+    <p>This page will add YouTube links to a list of links and will continuously fade between them while there are links left in the list.</p>
+    <p>
+        Sample links:<br>
+        https://www.youtube.com/watch?v=pf1u6XDy1XQ<br>
+        https://www.youtube.com/watch?v=kgx4WGK0oNU<br>
+        https://www.youtube.com/watch?v=CwRvM2TfYbs<br>
+        https://www.youtube.com/watch?v=mnatJqozbXQ<br>
+        https://www.youtube.com/watch?v=437mzdUDD_Y<br>
+    </p>
+    <label for="linkdrop">YouTube Link:</label>
+    <input type="text" id="linkdrop" name="linkdrop">
+    <button id="submit">ADD!</button><span id="listempty"></span>
+
+    <div id="wrapper">
+        <div id="player2-container">
+            <div id="player2"></div></div>
+        <div id="player3-container">
+            <div id="player3" ></div></div>
+        
+            
+    </div>
+
+    
+
+</body>
+<script id="script_1" src="youtube.js"></script>
+</html>
