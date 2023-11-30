@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    <title>Get YouTube Video by Keyword</title>
+	    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" /> -->
+	    <style>
+	    .paginate {
+	        margin-right: 5px;
+	    }
+	    li {
+	        display: inline-block;
+	    }
+        img {
+            max-height: 20vh;
+            max-width: 40%;
+        }
+                #wrapper{
+        position: relative;
+        }
+
+        #videoListContainer{
+            min-height: 40vh;
+            max-height: 40vh;
+            max-width: 80%;
+            overflow: scroll;
+        }
+
+                #player3-container, #player2-container{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        animation-fill-mode: both; 
+        }
+	    </style>
+	</head>
+	<body>
+
+        <p>This page will add YouTube links to a list of links and will continuously fade between them while there are links left in the list.</p>
+        <p>Press play on the YouTube embed below to start playing videos.</p>
+        <p> To use this page as a score, simply interpret the videos as an animated score for your performance.</p>
+
+        <!-- <label for="linkdrop">YouTube Link:</label> -->
+        <!-- <input type="text" id="linkdrop" name="linkdrop"> -->
+        <!-- <button id="submit">ADD!</button><span id="listempty"></span> -->
+    
+       
+
+        <h2>Search for videos:</h2>
+    
+
+	    <form id="yt-form">
+	        <p><input type="text" id="keyword-input" placeholder="Enter keyword" required></p>
+            <p>
+	            <input type="submit" value="Submit">
+	        </p>
+	        <!-- <p><input type="number" id="maxresult-input" placeholder="Max Results" min="1" max="50" required></p>
+	        <p> -->
+	            <!-- <select id="order-input" required>
+	                <option value="">--SELECT ORDER--</option>
+	                <option value="date">Date</option>
+	                <option value="rating">Rating</option>
+	                <option value="relevance">Relevance</option>
+	                <option value="title">Title</option>
+	                <option value="viewCount" selected>View Count</option>
+	            </select> -->
+	        </p>
+	        
+            <span id="listempty"></span>
+            <div id="videoListContainer"></div>
+	    </form>
+
+        <div id="wrapper">
+            <div id="player2-container">
+                <div id="player2"></div></div>
+            <div id="player3-container">
+                <div id="player3" ></div></div>
+            
+                
+        </div>
+	  
+        
+	    <script src="https://apis.google.com/js/api.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script> -->
+	    <script src="ytjs.js"></script>
+        <script id="script_1" src="youtube2.js"></script>
+	</body>
+</html>

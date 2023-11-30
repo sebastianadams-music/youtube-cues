@@ -30,9 +30,9 @@ const fadeTiming = {
 let idArray = []
 
 
-let submit = document.getElementById("submit")
+// let submit = document.getElementById("submit")
 
-submit.addEventListener("click", onSubmit, false)
+// submit.addEventListener("click", onSubmit, false)
 var counter = 0
 console.log("test")
 sequencer()
